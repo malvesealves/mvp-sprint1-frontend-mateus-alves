@@ -18,34 +18,19 @@
     </header>
 
     <section class="form">
-        <section class="newItemTitle">
-            <span class="newItemTitleContent">Animal</span>
-        </section>
         <section class="newItem">      
-            <select id="newAnimalType">
-                <option>Escolha o tipo</option>
-            </select>
-            <input type="text" id="newName" placeholder="Nome">
+            <input type="text" id="newName" placeholder="Nome do pet">
             <input type="text" id="newAge" placeholder="Idade">
+            <input type="text" id="newResponsible" placeholder="Responsável">
+            <span onclick="newItem()" class="addBtn">Adicionar</span>
         </section>
-
-        <section class="newItemTitle">
-            <span class="newItemTitleContent"> Responsável </span>
-        </section>
-        <section class="newItem">
-            <select id="newContactType">
-                <option>Escolha o tipo</option>
-            </select>
-            <input type="text" id="newText" placeholder="Contato">
-        </section>
-        <span onclick="newItem()" class="addBtn">Adicionar</span>
         
         <section class="items">
             <table id="myTable">
                 <tr>
-                    <th>Tipo</th>
-                    <th>Nome</th>
+                    <th>Nome do pet</th>
                     <th>Idade</th>
+                    <th>Responsável</th>
                     <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
                 </tr>
             </table>
